@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding: 0 calc(50% - 350px);
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #170d3a;
+    color: #FFF;
+    font-size: 32px;
+    min-height: 40px;
+}
+
+.content {
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #170d3a;
+    color: #FFF;
+    font-size: 12px;
+    min-height: 30px;
+}
