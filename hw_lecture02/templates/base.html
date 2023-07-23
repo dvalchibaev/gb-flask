@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %} Login page {% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+    <header class="center header">
+        <h1>Домашнее задание 2</h1>
+    </header>
+    {% endblock %}
+    <section class="center content">
+        <p>
+            Создать страницу, на которой будет форма для ввода имени и электронной почты, при отправке которой будет создан cookie-файл с данными пользователя, а также будет произведено перенаправление на страницу приветствия, где будет отображаться имя пользователя.
+            На странице приветствия должна быть кнопка «Выйти», при нажатии на которую будет удалён cookie-файл с данными пользователя и произведено перенаправление на страницу ввода имени и электронной почты.
+        </p>
+    </section>
+        {% block main %}
+        {% endblock %}
+    {% block footer %}
+    <footer class="center footer">
+        <h3>Footer</h3>
+    </footer>
+    {% endblock %}
+</body>
+</html>
