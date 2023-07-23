@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %} {{title}} {% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+    <header class="center header">
+        <h1>Домашнее задание 1</h1>
+        <nav>
+            <ul class="navigation">
+                <li>Главная</li>
+                <li>Одежда</li>
+                <li>Обувь</li>
+            </ul>
+        </nav>
+    </header>
+    {% endblock %}
+    <section class="center content">
+        <p>
+            Создать базовый шаблон для интернет-магазина, содержащий общие элементы дизайна (шапка, меню, подвал), и дочерние шаблоны для страниц категорий товаров и отдельных товаров. Например, создать страницы «Одежда», «Обувь» и «Куртка», используя базовый шаблон.
+        </p>
+    </section>
+        {% block main %}
+        {% endblock %}
+    <section class="center content">
+        <h2>Для навигации:</h2>
+        <ul>
+            <li>Главная: /home/ </li>
+            <li>Одежда: /clothes/</li>
+            <li>Обувь: /shoes/</li>
+        </ul>
+    </section>
+    {% block footer %}
+    <footer class="center footer">
+        <h3>Footer</h3>
+    </footer>
+    {% endblock %}
+</body>
+</html>
