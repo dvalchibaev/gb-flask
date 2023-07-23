@@ -3,7 +3,7 @@ from datetime import date
 
 
 app = Flask(__name__)
-HTML = "base.html"
+HTML = "home.html"
 
 
 @app.route('/')
@@ -16,13 +16,13 @@ def home():
 @app.route('/clothes/')
 def clothes():
     context = {'title': 'Одежда'}
-    return render_template('static/clothes.html', **context)
+    return render_template('clothes.html', **context)
 
 
 @app.route('/shoes/')
 def shoes():
     context = {'title': 'Обувь'}
-    return render_template('static/shoes.html', **context)
+    return render_template('shoes.html', **context)
 
 
 if __name__ == '__main__':
