@@ -7,8 +7,6 @@ a {
     text-decoration: none;
 }
 
-
-
 .center {
     padding: 0 calc(50% - 350px);
 }
@@ -20,6 +18,12 @@ a {
     color: #FFF;
     font-size: 32px;
     min-height: 40px;
+}
+
+.task p {
+    padding: 25px 0px 0px 50px;
+    font-size: 16px;
+    color: #252550;
 }
 
 .content {
