@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Welcome!
+{% endblock %}
+
+{% block main %}
+    <section class="center content">
+        <p>Приветствую, {{ name }}! </p><br>
+        <form method="post">
+            <button><a href="/logout">Выход</a></button>
+        </form>
+    </section>
+{% endblock %}
