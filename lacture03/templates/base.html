@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %} Login page {% endblock %}</title>
+</head>
+<body>
+    {% block header %}
+    <header class="center header">
+        <h1>Домашнее задание 2</h1>
+    </header>
+    {% endblock %}
+    <section class="center content">
+        <p>
+            Создать форму для регистрации пользователей на сайте.
+            Форма должна содержать поля "Имя", "Фамилия", "Email", "Пароль" и кнопку "Зарегистрироваться".
+            При отправке формы данные должны сохраняться в базе данных, а пароль должен быть зашифрован.
+        </p>
+    </section>
+        {% block main %}
+        {% endblock %}
+    {% block footer %}
+    <footer class="center footer">
+        <h3>Footer</h3>
+    </footer>
+    {% endblock %}
+</body>
+</html>

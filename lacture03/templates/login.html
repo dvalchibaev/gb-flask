@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Sign up page
+{% endblock %}
+
+{% block main %}
+    <section class="center content">
+        <p>Пожалуйста, введите данные нового пользователя: </p><br>
+        <form method="post">
+            <p> Имя </p>
+            <input type="text" name="first name" placeholder="First Name"><br>
+            <p> Фамилия </p>
+            <input type="text" name="last name" placeholder="Last Name"><br>
+            <p> Email </p>
+            <input type="email" name="email" placeholder="email"><br>
+            <p> Пароль </p>
+            <input type="password" name="password"><br>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </section>
+{% endblock %}
