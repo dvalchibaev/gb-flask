@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фильмы</title>
+</head>
+<body>
+    <div>
+        <h1>Movies</h1>
+        <table>
+            <thread>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                    <th>Genre</th>
+                    <th>Watched</th>
+                </tr>
+            </thread>
+            <tbody>
+            {% for movie in movies %}
+            <tr>
+                <td>{{ movie.id }}</td>
+                <td>{{ movie.title }}</td>
+                <td>{{ movie.description }}</td>
+                <td>{{ movie.year }}</td>
+                <td>{{ movie.genre }}</td>
+                <td>
+                    {% if movie.watched == True %}
+                        Watched
+                    {% else %}
+                        Have not watched
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
